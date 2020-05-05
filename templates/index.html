@@ -8,20 +8,34 @@
 <body>
 <h1>Reviews cutres punto com</h1>
 <a href="/reviews/nueva">Publicar review</a>
-<br/>
+<br>
 <a href="/reviews/misreviews">Mis reviews</a>
 
     {% if reviews.count() > 0 %}
         {% for review in reviews %}
             <div>
                 <h3>Review de {{ review.titulo }} por {{ review.usuario }}</h3>
-                <ul>
+                <li>
                     <li>Tipo: {{ review.tipo }}</li>
-                    <li>Autor: {{ review.autor }}</li>
+
+                    <li>
+                    {% if review.tipo == "Libro" %}
+                        Autor: {{ review.autor }}
+                    {% else %}
+                        {%if review.tipo == "Videojuego" %}
+                            Empresa: {{ review.autor }}
+                        {% else %}
+                            Director: {{ review.autor }}
+                        {% endif %}
+                    {% endif %}
+                    </li>
+
                     <li>Nota: {{ review.nota }}</li>
+
                     {% if review.comentario.length() > 0 %}
                         <li>Comentario: <p>{{ review.comentario }}</p></li>
                     {% endif %}
+                    <li>Fecha de publicación: {{ review.hora }}</li>
                 </ul>
             </div>
         {% endfor%}
