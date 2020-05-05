@@ -2,16 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="83223972-1c74-4395-9138-efbc6d221684" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/handlers/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/handlers/reviews/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/handlers/reviews/nueva.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/app.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/handlers/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/producto.py" beforeDir="false" afterPath="$PROJECT_DIR$/model/review.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,8 +12,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Python Script" />
         <option value="HTML File" />
+        <option value="Python Script" />
       </list>
     </option>
   </component>
@@ -41,6 +32,11 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\USUARIO\Documents\Universidade\ALS\ProyectoALS\handlers" />
+    </key>
   </component>
   <component name="RunManager">
     <configuration name="ProyectoALS" type="Python.AppEngineServer" factoryName="App Engine server">
@@ -72,14 +68,30 @@
       <updated>1588412578190</updated>
       <workItem from="1588412583786" duration="1476000" />
       <workItem from="1588674098592" duration="610000" />
-      <workItem from="1588674837751" duration="2534000" />
+      <workItem from="1588674837751" duration="2790000" />
     </task>
+    <task id="LOCAL-00001" summary="Hecha plantilla index.html&#10;Sistema de ficheros reorganizado">
+      <created>1588677556474</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1588677556474</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Hecha plantilla index.html&#10;Sistema de ficheros reorganizado" />
+    <option name="LAST_COMMIT_MESSAGE" value="Hecha plantilla index.html&#10;Sistema de ficheros reorganizado" />
+  </component>
   <component name="WindowStateProjectService">
+    <state x="298" y="0" key="CommitChangelistDialog2" timestamp="1588677555935">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state x="298" y="0" key="CommitChangelistDialog2/0.0.1366.738@0.0.1366.738" timestamp="1588677555935" />
     <state width="1323" height="318" key="GridCell.Tab.0.bottom" timestamp="1588677142621">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
