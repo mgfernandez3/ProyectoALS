@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Reviews cutres</title>
+
+</head>
+<body>
+<h1>Reviews cutres punto com</h1>
+<a href="/reviews/nueva">Publicar review</a>
+<br/>
+<a href="/reviews/misreviews">Mis reviews</a>
+
+    {% if reviews.count() > 0 %}
+        {% for review in reviews %}
+            <div>
+                <h3>Review de {{ review.titulo }} por {{ review.usuario }}</h3>
+                <ul>
+                    <li>Tipo: {{ review.tipo }}</li>
+                    <li>Autor: {{ review.autor }}</li>
+                    <li>Nota: {{ review.nota }}</li>
+                    {% if review.comentario.length() > 0 %}
+                        <li>Comentario: <p>{{ review.comentario }}</p></li>
+                    {% endif %}
+                </ul>
+            </div>
+        {% endfor%}
+    {% else %}
+        <p>No se ha publicado ninguna review</p>
+    {% endif %}
+
+</body>
+</html>
