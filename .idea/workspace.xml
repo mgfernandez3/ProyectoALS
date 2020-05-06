@@ -2,16 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="83223972-1c74-4395-9138-efbc6d221684" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/handlers/reviews/elimina.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/handlers/reviews/mis_reviews.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/esqueleto.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/mis_reviews.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/app.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/handlers/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/handlers/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/handlers/reviews/mis_reviews.py" beforeDir="false" afterPath="$PROJECT_DIR$/handlers/reviews/mis_reviews.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/handlers/reviews/nueva.py" beforeDir="false" afterPath="$PROJECT_DIR$/handlers/reviews/nueva.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/model/review.py" beforeDir="false" afterPath="$PROJECT_DIR$/model/review.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/nueva_review.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/nueva_review.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/mis_reviews.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/mis_reviews.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -79,6 +76,7 @@
       <workItem from="1588674098592" duration="610000" />
       <workItem from="1588674837751" duration="5331000" />
       <workItem from="1588760794855" duration="7082000" />
+      <workItem from="1588781453633" duration="3417000" />
     </task>
     <task id="LOCAL-00001" summary="Hecha plantilla index.html&#10;Sistema de ficheros reorganizado">
       <created>1588677556474</created>

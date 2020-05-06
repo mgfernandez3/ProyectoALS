@@ -16,13 +16,14 @@
 #
 import webapp2
 from webapp2_extras import jinja2
+from webapp2_extras.users import users
 
 from model.review import Review
 
 
 class MisReviewsHandler(webapp2.RequestHandler):
     def get(self):
-        reviews = Review.query().order(-Review.hora)
+        reviews = Review.query(Review.usuario_email == users.get_current_user().email()).order(-Review.hora)
 
         valores_plantilla = {
             "reviews": reviews

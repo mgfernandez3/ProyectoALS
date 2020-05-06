@@ -1,44 +1,48 @@
 {% extends "esqueleto.html" %}
 
 {% block contenido %}
-<div class="btn-group" role="group">
-    <a href="/reviews/nueva" type="button" class="btn btn-success">Publicar review</a>
-    <a href="/reviews/mis_reviews" type="button" class="btn btn-primary">Mis reviews</a>
-</div>
-{% if reviews.count() > 0 %}
-    {% for review in reviews %}
-        <div class="card">
-            <div class="card-body">
-                <h5 class="card-title">Review de <b>{{ review.titulo }}</b> por {{ review.usuario }}</h5>
-            </div>
-            <ul class="list-group list-group-flush">
-                <li class="list-group-item"></li>
+{%if usuario %}
+<p>Hola, {{ usuario.nickname() }} </p>
+<a href="/reviews/nueva" type="button" class="btn btn-success">Publicar review</a>
+<a href="/reviews/mis_reviews?usuario_email={{ usuario.email }}" type="button" class="btn btn-primary">Mis reviews</a>
+<a href="{{ url_usuario }}" type="button" class="btn btn-danger float-right">Salir</a>
 
-                <li  class="list-group-item">
-                    {% if review.tipo == "Libro" %}
-                        {{ review.tipo }} escrito por {{ review.autor }}
-                    {% else %}
-                        {%if review.tipo == "Videojuego" %}
-                            {{ review.tipo }} desarrollado por {{ review.autor }}
+    {% if reviews.count() > 0 %}
+        {% for review in reviews %}
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Review de <b class="font-italic">{{ review.titulo }}</b>, por {{ review.usuario_nombre }}</h5>
+                </div>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item"></li>
+
+                    <li  class="list-group-item">
+                        {% if review.tipo == "Libro" %}
+                            {{ review.tipo }} escrito por {{ review.autor }}
                         {% else %}
-                            {{ review.tipo }} dirigida por {{ review.autor }}
+                            {%if review.tipo == "Videojuego" %}
+                                {{ review.tipo }} desarrollado por {{ review.autor }}
+                            {% else %}
+                                {{ review.tipo }} dirigida por {{ review.autor }}
+                            {% endif %}
                         {% endif %}
+                    </li>
+
+                    <li class="list-group-item">Nota: {{ review.nota }}</li>
+
+                    {% if review.comentario %}
+                    <li class="list-group-item">Comentario: <p class="font-italic">{{ review.comentario }}</p></li>
                     {% endif %}
-                </li>
-
-                <li class="list-group-item">Nota: {{ review.nota }}</li>
-
-                {% if review.comentario %}
-                <li class="list-group-item">Comentario: <p class="font-italic">{{ review.comentario }}</p></li>
-                {% endif %}
-            </ul>
-            <div class="card-footer">
-                Fecha de publicación: {{ review.hora }}
+                </ul>
+                <div class="card-footer">
+                    Fecha de publicación: {{ review.hora }}
+                </div>
             </div>
-        </div>
-    {% endfor%}
+        {% endfor%}
+    {% else %}
+        <p>No se ha publicado ninguna review</p>
+    {% endif %}
 {% else %}
-    <p>No se ha publicado ninguna review</p>
+    Para utilizar esta página necesitar estar logueado. ¡Entra <a href="{{ url_usuario }}">aquí</a>!
 {% endif %}
-
 {% endblock %}

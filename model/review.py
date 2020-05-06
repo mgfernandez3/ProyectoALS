@@ -6,7 +6,8 @@ from webapp2_extras.users import users
 
 
 class Review(ndb.Model):
-    # usuario = ndb.KeyProperty(kind=users.User)
+    usuario_email = ndb.StringProperty(required=True)
+    usuario_nombre = ndb.StringProperty(required=True)
     hora = ndb.DateTimeProperty(auto_now_add=True, indexed=True)
     tipo = ndb.StringProperty(required=True, choices=["Película", "Serie", "Libro", "Videojuego"])
     titulo = ndb.StringProperty(required=True)

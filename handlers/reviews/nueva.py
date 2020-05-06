@@ -3,8 +3,7 @@
 
 import webapp2
 from webapp2_extras import jinja2
-
-import time
+from webapp2_extras.users import users
 
 from model.review import Review
 
@@ -33,10 +32,17 @@ class NuevaReviewHandler(webapp2.RequestHandler):
         if not tipo or not titulo or not autor or nota < 0:
             return self.redirect("/")
         else:
-            review = Review(tipo=tipo, titulo=titulo, autor=autor, nota=nota, comentario=comentario)
+            usuario = users.get_current_user()
+            review = Review(
+                usuario_email=usuario.email(),
+                usuario_nombre=usuario.nickname(),
+                tipo=tipo,
+                titulo=titulo,
+                autor=autor,
+                nota=nota,
+                comentario=comentario)
             review.put()
             return self.redirect("/")
-
 
 
 app = webapp2.WSGIApplication([
