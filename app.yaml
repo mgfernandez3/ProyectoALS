@@ -15,6 +15,12 @@ handlers:
 - url: /reviews/nueva
   script: handlers.reviews.nueva.app
 
+- url: /reviews/elimina
+  script: handlers.reviews.elimina.app
+
+- url: /reviews/mis_reviews
+  script: handlers.reviews.mis_reviews.app
+
 libraries:
 - name: webapp2
   version: "2.5.2"

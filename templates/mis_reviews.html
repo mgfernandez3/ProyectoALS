@@ -1,10 +1,8 @@
 {% extends "esqueleto.html" %}
 
 {% block contenido %}
-<div class="btn-group" role="group">
-    <a href="/reviews/nueva" type="button" class="btn btn-success">Publicar review</a>
-    <a href="/reviews/mis_reviews" type="button" class="btn btn-primary">Mis reviews</a>
-</div>
+
+<h3>Mis reviews</h3>
 {% if reviews.count() > 0 %}
     {% for review in reviews %}
         <div class="card">
@@ -34,6 +32,7 @@
             </ul>
             <div class="card-footer">
                 Fecha de publicación: {{ review.hora }}
+                <a href="/reviews/elimina?id={{ review.key.urlsafe}}" type="button" class="btn btn-danger float-right">Eliminar review</a>
             </div>
         </div>
     {% endfor%}

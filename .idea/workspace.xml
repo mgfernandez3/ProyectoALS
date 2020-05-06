@@ -2,11 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="83223972-1c74-4395-9138-efbc6d221684" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/templates/nueva_review.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/handlers/reviews/elimina.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/handlers/reviews/mis_reviews.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/esqueleto.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/mis_reviews.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/app.yaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/handlers/reviews/nueva.py" beforeDir="false" afterPath="$PROJECT_DIR$/handlers/reviews/nueva.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/review.py" beforeDir="false" afterPath="$PROJECT_DIR$/model/review.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/nueva_review.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/nueva_review.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -16,8 +21,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Python Script" />
         <option value="HTML File" />
+        <option value="Python Script" />
       </list>
     </option>
   </component>
@@ -72,7 +77,8 @@
       <updated>1588412578190</updated>
       <workItem from="1588412583786" duration="1476000" />
       <workItem from="1588674098592" duration="610000" />
-      <workItem from="1588674837751" duration="5252000" />
+      <workItem from="1588674837751" duration="5331000" />
+      <workItem from="1588760794855" duration="7082000" />
     </task>
     <task id="LOCAL-00001" summary="Hecha plantilla index.html&#10;Sistema de ficheros reorganizado">
       <created>1588677556474</created>
@@ -96,24 +102,28 @@
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="298" y="0" key="CommitChangelistDialog2/0.0.1366.738@0.0.1366.738" timestamp="1588677555935" />
-    <state width="1323" height="317" key="GridCell.Tab.0.bottom" timestamp="1588679580463">
+    <state width="1323" height="316" key="GridCell.Tab.0.bottom" timestamp="1588766104434">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1323" height="317" key="GridCell.Tab.0.bottom/0.0.1366.738@0.0.1366.738" timestamp="1588679580463" />
-    <state width="1323" height="317" key="GridCell.Tab.0.center" timestamp="1588679580463">
+    <state width="1323" height="316" key="GridCell.Tab.0.bottom/0.0.1366.738@0.0.1366.738" timestamp="1588766104434" />
+    <state width="1323" height="316" key="GridCell.Tab.0.center" timestamp="1588766104433">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1323" height="317" key="GridCell.Tab.0.center/0.0.1366.738@0.0.1366.738" timestamp="1588679580463" />
-    <state width="1323" height="317" key="GridCell.Tab.0.left" timestamp="1588679580463">
+    <state width="1323" height="316" key="GridCell.Tab.0.center/0.0.1366.738@0.0.1366.738" timestamp="1588766104433" />
+    <state width="1323" height="316" key="GridCell.Tab.0.left" timestamp="1588766104433">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1323" height="317" key="GridCell.Tab.0.left/0.0.1366.738@0.0.1366.738" timestamp="1588679580463" />
-    <state width="1323" height="317" key="GridCell.Tab.0.right" timestamp="1588679580463">
+    <state width="1323" height="316" key="GridCell.Tab.0.left/0.0.1366.738@0.0.1366.738" timestamp="1588766104433" />
+    <state width="1323" height="316" key="GridCell.Tab.0.right" timestamp="1588766104433">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1323" height="317" key="GridCell.Tab.0.right/0.0.1366.738@0.0.1366.738" timestamp="1588679580463" />
+    <state width="1323" height="316" key="GridCell.Tab.0.right/0.0.1366.738@0.0.1366.738" timestamp="1588766104433" />
+    <state x="344" y="59" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1588760903541">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state x="344" y="59" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1366.738@0.0.1366.738" timestamp="1588760903541" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/ProyectoALS$ProyectoALS.coverage" NAME="ProyectoALS Coverage Results" MODIFIED="1588679558374" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/ProyectoALS$ProyectoALS.coverage" NAME="ProyectoALS Coverage Results" MODIFIED="1588766008413" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
   </component>
 </project>
