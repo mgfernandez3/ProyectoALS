@@ -14,12 +14,15 @@ handlers:
 
 - url: /reviews/nueva
   script: handlers.reviews.nueva.app
+  login: required
 
 - url: /reviews/elimina
   script: handlers.reviews.elimina.app
+  login: required
 
 - url: /reviews/mis_reviews
   script: handlers.reviews.mis_reviews.app
+  login: required
 
 libraries:
 - name: webapp2

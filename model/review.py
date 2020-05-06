@@ -21,4 +21,4 @@ class Review(ndb.Model):
         except KeyError:
             id = ""
 
-        key = ndb.Key(urlsafe=id).get()
+        return ndb.Key(urlsafe=id).get()

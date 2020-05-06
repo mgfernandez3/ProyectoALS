@@ -35,7 +35,6 @@ class NuevaReviewHandler(webapp2.RequestHandler):
         else:
             review = Review(tipo=tipo, titulo=titulo, autor=autor, nota=nota, comentario=comentario)
             review.put()
-            time.sleep(1)
             return self.redirect("/")
 
 

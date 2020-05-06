@@ -102,28 +102,32 @@
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="298" y="0" key="CommitChangelistDialog2/0.0.1366.738@0.0.1366.738" timestamp="1588677555935" />
-    <state width="1323" height="316" key="GridCell.Tab.0.bottom" timestamp="1588766104434">
+    <state width="1323" height="316" key="GridCell.Tab.0.bottom" timestamp="1588781504335">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1323" height="316" key="GridCell.Tab.0.bottom/0.0.1366.738@0.0.1366.738" timestamp="1588766104434" />
-    <state width="1323" height="316" key="GridCell.Tab.0.center" timestamp="1588766104433">
+    <state width="1323" height="316" key="GridCell.Tab.0.bottom/0.0.1366.738@0.0.1366.738" timestamp="1588781504335" />
+    <state width="1323" height="316" key="GridCell.Tab.0.center" timestamp="1588781504335">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1323" height="316" key="GridCell.Tab.0.center/0.0.1366.738@0.0.1366.738" timestamp="1588766104433" />
-    <state width="1323" height="316" key="GridCell.Tab.0.left" timestamp="1588766104433">
+    <state width="1323" height="316" key="GridCell.Tab.0.center/0.0.1366.738@0.0.1366.738" timestamp="1588781504335" />
+    <state width="1323" height="316" key="GridCell.Tab.0.left" timestamp="1588781504334">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1323" height="316" key="GridCell.Tab.0.left/0.0.1366.738@0.0.1366.738" timestamp="1588766104433" />
-    <state width="1323" height="316" key="GridCell.Tab.0.right" timestamp="1588766104433">
+    <state width="1323" height="316" key="GridCell.Tab.0.left/0.0.1366.738@0.0.1366.738" timestamp="1588781504334" />
+    <state width="1323" height="316" key="GridCell.Tab.0.right" timestamp="1588781504335">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1323" height="316" key="GridCell.Tab.0.right/0.0.1366.738@0.0.1366.738" timestamp="1588766104433" />
+    <state width="1323" height="316" key="GridCell.Tab.0.right/0.0.1366.738@0.0.1366.738" timestamp="1588781504335" />
     <state x="344" y="59" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1588760903541">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="344" y="59" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1366.738@0.0.1366.738" timestamp="1588760903541" />
+    <state x="0" y="0" width="607" height="738" key="find.popup" timestamp="1588781606510">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state x="0" y="0" width="607" height="738" key="find.popup/0.0.1366.738@0.0.1366.738" timestamp="1588781606510" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/ProyectoALS$ProyectoALS.coverage" NAME="ProyectoALS Coverage Results" MODIFIED="1588766008413" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/ProyectoALS$ProyectoALS.coverage" NAME="ProyectoALS Coverage Results" MODIFIED="1588781462186" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
   </component>
 </project>
