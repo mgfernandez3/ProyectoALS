@@ -1,5 +1,6 @@
 # coding: utf-8
 # Nueva review
+import time
 
 import webapp2
 from webapp2_extras import jinja2
@@ -42,6 +43,7 @@ class NuevaReviewHandler(webapp2.RequestHandler):
                 nota=nota,
                 comentario=comentario)
             review.put()
+            time.sleep(1)
             return self.redirect("/")
 
 

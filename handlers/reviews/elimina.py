@@ -12,6 +12,7 @@ class EliminaReviewHandler(webapp2.RequestHandler):
     def get(self):
         review = Review.recupera(self.request)
         review.key.delete()
+        time.sleep(1)
         return self.redirect("/")
 
 
